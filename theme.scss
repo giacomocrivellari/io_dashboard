@@ -53,6 +53,10 @@ $lead-font-size:   1.30rem;
 //Breadcrumb
 $breadcrumb-bg: $body-bg;
 
+$border-radius: 1rem;
+$border-radius-lg: $border-radius * 1.2;
+$border-radius-sm: $border-radius * .8;
+
 @import 'bootstrap-4.0.0';
 
  
