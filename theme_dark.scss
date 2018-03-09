@@ -18,7 +18,7 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: gold,
+  primary: #12bbad,
   secondary: #4f70ce,
   light: #f3f3f3,
   dark: #151515,
@@ -28,9 +28,7 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: blue;
-
-
+$body-bg: white;
 $body-color: #333;
 
 
@@ -46,9 +44,6 @@ $headings-font-weight: 200;
 $lead-font-size:   1.30rem;
 
 $spacer: 1.5rem;
-
-//Card
-$card-bg:   red;
 
 @import 'bootstrap-4.0.0';
 
