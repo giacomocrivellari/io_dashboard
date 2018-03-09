@@ -18,9 +18,9 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: gold,
+  primary: #1eaba6,
   secondary: #4f70ce,
-  light: #f3f3f3,
+  light: #f2f4f7,
   dark: #151515,
   info: #ccc,
   success: #28a745,
@@ -28,14 +28,18 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: blue;
+$body-bg: #f2f4f7;
 
 
-$body-color: #333;
+
+
+$body-color: #3b3b3b;
+
 
 
 $body-color-inverse: invert($body-color) !default;
-$link-color: #12bbad;
+$link-color: #1eaba6;
+
 
 // Fonts
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -45,7 +49,7 @@ $font-weight-normal: 200;
 $headings-font-weight: 200;
 $lead-font-size:   1.30rem;
 
-$spacer: 1.5rem;
+
 
 //Card
 $card-bg:   red;
