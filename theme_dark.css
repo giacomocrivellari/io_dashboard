@@ -63,9 +63,9 @@ body {
   font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.5;
-  color: #3b3b3b;
+  color: white;
   text-align: left;
-  background-color: #f2f4f7; }
+  background-color: black; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -400,7 +400,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f2f4f7;
+  background-color: black;
   border: 1px solid #dee2e6;
   border-radius: 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -1061,7 +1061,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #dee2e6; }
   .table .table {
-    background-color: #f2f4f7; }
+    background-color: black; }
 
 .table-sm th,
 .table-sm td {
@@ -1182,7 +1182,7 @@ pre {
     background-color: rgba(0, 0, 0, 0.075); }
 
 .table .thead-dark th {
-  color: #f2f4f7;
+  color: black;
   background-color: #212529;
   border-color: #32383e; }
 
@@ -1192,7 +1192,7 @@ pre {
   border-color: #dee2e6; }
 
 .table-dark {
-  color: #f2f4f7;
+  color: black;
   background-color: #212529; }
   .table-dark th,
   .table-dark td,
@@ -1475,7 +1475,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: #34ce57; }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 1px #f2f4f7, 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
   border-color: #28a745; }
@@ -1552,7 +1552,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: #e4606d; }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 1px #f2f4f7, 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
+  box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
   border-color: #dc3545; }
@@ -2111,7 +2111,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.8rem;
-  color: #3b3b3b;
+  color: white;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2456,7 +2456,7 @@ tbody.collapse.show {
     background-color: #1eaba6;
     box-shadow: none; }
   .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 1px #f2f4f7, 0 0 0 0.2rem rgba(30, 171, 166, 0.25); }
+    box-shadow: 0 0 0 1px black, 0 0 0 0.2rem rgba(30, 171, 166, 0.25); }
   .custom-control-input:active ~ .custom-control-label::before {
     color: #fff;
     background-color: #90ece8;
@@ -2652,8 +2652,8 @@ tbody.collapse.show {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #f2f4f7;
-    border-color: #dee2e6 #dee2e6 #f2f4f7; }
+    background-color: black;
+    border-color: #dee2e6 #dee2e6 black; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3146,7 +3146,7 @@ tbody.collapse.show {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #f2f4f7;
+  background-color: black;
   border-radius: 1rem; }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -3487,7 +3487,7 @@ tbody.collapse.show {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #3b3b3b;
+    color: white;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -3962,7 +3962,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #3b3b3b; }
+  color: white; }
 
 .carousel {
   position: relative; }
