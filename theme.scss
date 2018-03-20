@@ -19,8 +19,8 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #1eaba6,
-  secondary: #4f70ce,
+  primary: #999,
+  secondary: #1eaba6,
   light: #f2f4f7,
   dark: #151515,
   info: #ccc,
@@ -39,7 +39,10 @@ $body-color: #3b3b3b;
 
 
 $body-color-inverse: invert($body-color) !default;
-$link-color: #1eaba6;
+$link-color: #999;
+
+
+
 
 
 // Fonts
@@ -59,7 +62,7 @@ $lead-font-size:   1.30rem;
 //Breadcrumb
 $breadcrumb-bg: $body-bg;
 
-$border-radius: 1rem;
+$border-radius: .3rem;
 $border-radius-lg: $border-radius * 1.2;
 $border-radius-sm: $border-radius * .8;
 
@@ -67,7 +70,9 @@ $border-radius-sm: $border-radius * .8;
 $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
-
+//Card title big
+$display4-size: 2.5rem;
+$display4-weight: 500;
 
 @import 'bootstrap-4.0.0';
 
@@ -157,11 +162,18 @@ html,body {
 /* CUSTOM BY LEN */
 
 .card:hover, .hilight:hover {
-  /* color: theme-color("primary"); */
+color: theme-color("secondary");
   transform:scale(1.02);
 }
 
 .card {
   box-shadow: 0 .25rem .75rem rgba(map-get($theme-colors, 'dark'), .08);
 	transition: transform .2s;
+  border-radius: 1rem;
 }
+
+.badge-notification {
+  margin-top:-.8rem;
+  margin-top:-.8rem;
+}
+
