@@ -89,6 +89,16 @@
               </ul>
             </div>
           </div>
+          <div class="row border-bottom p-0">
+            <div class="col-md-12 p-0">
+              <a data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-toggle="popover" data-placement="right" data-trigger="hover">
+                <p class="text-dark m-3"><i class="fa d-inline fa-heart text-primary fa-lg"></i><b class=""> INFORTUNI E MALATTIA</b><i class="fa d-inline fa-angle-down px-1 float-right arrow-box"></i></p>
+              </a>
+              <ul class="list-unstyled pl-4 collapse" id="collapseExample4">
+                <li class=""><b>Infortuni</b></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="col">
           <div class="row border-bottom">
@@ -164,11 +174,11 @@
                   <hr>
                   <div class="card">
                     <div class="card-body">
-                      <div class="row mb-3">
+                      <div class="row mb-3 px-3">
                         <div class="col-md-6 align-items-center d-flex justify-content-center p-3 border">
                           <p class="m-0 lead text-center"> <i class="fa fa-upload d-inline"></i> Drop your files here</p>
                         </div>
-                        <div class="col-md-6 d-flex align-items-center justify-content-between">
+                        <div class="col-md-6 d-flex align-items-center justify-content-between px-4">
                           <p class="m-0">Visualizza documenti
                             <br>archiviati</p><i class="d-block  fa fa-toggle-on text-primary fa-2x"></i></div>
                       </div>
@@ -345,6 +355,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+    $('[data-toggle="popover"]').popover()
+    })
+  </script>
 </body>
 
 </html>
