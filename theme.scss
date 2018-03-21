@@ -30,33 +30,20 @@ $theme-colors: (
 );
 
 $body-bg: #f2f4f7;
-
-
-
-
 $body-color: #3b3b3b;
-
-
 
 $body-color-inverse: invert($body-color) !default;
 $link-color: #999;
 
-
-
-
-
 // Fonts
 $font-family-base: Quicksand;
-
-
-
 $headings-font-family: $font-family-base;
-
-
 $display-font-family: $font-family-base;
 $font-weight-normal: 500;
 $headings-font-weight: 200;
 $lead-font-size:   1.30rem;
+$display4-size: 2.5rem;
+$display4-weight: 500;
 
 
 //Breadcrumb
@@ -65,115 +52,36 @@ $breadcrumb-bg: $body-bg;
 $border-radius: .3rem;
 $border-radius-lg: $border-radius * 1.2;
 $border-radius-sm: $border-radius * .8;
-
+$card-border-radius:  $border-radius * 3;
 
 $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
-//Card title big
-$display4-size: 2.5rem;
-$display4-weight: 500;
-
 @import 'bootstrap-4.0.0';
 
- 
-html,body {
-   height:100%;
-}
 
-.cover {
-	min-height:100%;
-  display:flex;
-  align-items:center
-}
-
-
-.bg-gradient {
-  overflow: hidden;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-  background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
-}
-
-.filter-dark {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'dark'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'dark'), 0.75);
-  }
-}
-
-.filter-light {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'light'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'light'),0.75);
-  }
-}
-
-.filter-color {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'primary'), 0.75);
-  }
-}
-
-.filter-gradient {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: linear-gradient(-30deg, transparentize(theme-color("secondary"), 0.1) 0%, transparentize(theme-color("primary"), 0.1) 50%, transparentize(theme-color("primary"), 0.05) 100%);
-  }
-}
-
-.arrow-box {
-	margin-top:4px; 
-  border-radius:2px;
-}
-
-/* CUSTOM BY LEN */
-
-.card:hover, .hilight:hover {
-color: theme-color("secondary");
-  transform:scale(1.02);
-}
-
-.card {
+.riepilogo {
   box-shadow: 0 .25rem .75rem rgba(map-get($theme-colors, 'dark'), .08);
 	transition: transform .2s;
-  border-radius: 1rem;
+	&:hover {
+	color: theme-color("secondary");
+  transform:scale(1.02);
+	}
 }
 
 .badge-notification {
   margin-top:-.8rem;
   margin-top:-.8rem;
+}
+
+hr:after{
+  content: "";  
+  background: theme-color("secondary");
+  display: block;
+  height:6px;
+  width:18px;
+  border-radius: 3px;
+  position: relative;
+  top:-3px;
 }
 
