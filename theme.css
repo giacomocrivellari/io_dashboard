@@ -6136,3 +6136,10 @@ hr:after {
 
 .input-group .form-control {
   border-left: none; }
+
+.pippo {
+  transition: all .2s; }
+
+.pippo:hover {
+  background: #1eaba6;
+  transform: scale(1.02); }

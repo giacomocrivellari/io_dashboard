@@ -113,3 +113,12 @@ hr:after{
  		border-left: none; 
   }
 }
+
+.pippo {
+	transition: all .2s;
+}
+
+.pippo:hover {
+	background: theme-color("secondary");
+  transform: scale(1.02);
+}
