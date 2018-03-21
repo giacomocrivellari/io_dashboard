@@ -54,6 +54,14 @@ $border-radius-lg: $border-radius * 1.2;
 $border-radius-sm: $border-radius * .8;
 $card-border-radius:  $border-radius * 3;
 
+$input-border-radius:                   $border-radius * 3;
+$input-border-radius-lg:                $border-radius-lg * 3;
+$input-border-radius-sm:                $border-radius-sm * 3;
+
+$input-box-shadow:                      none;
+$input-group-addon-bg:                  white;
+
+
 $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
@@ -85,3 +93,20 @@ hr:after{
   top:-3px;
 }
 
+/*treecontrol li i.tree-branch-head {
+   cursor: pointer;
+   &:before {
+   	font-family: FontAwesome;
+   	content: "\f0da";
+   	font-style: normal;
+	}
+}*/
+
+.input-group {
+  .input-group-prepend {
+    border-right: none;
+  }
+  .form-control {
+ 		border-left: none; 
+  }
+}

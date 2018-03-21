@@ -14,10 +14,16 @@
         <img class="d-block img-fluid" src="assets/LogoIT.png" width="200"> </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline m-0 ml-auto">
-          <input class="form-control mr-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
+        <form class="form-inline m-0 ml-auto mr-3">
+          <div class="input-group">
+            <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="d-block fa fa-search"></i></span></div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ricerca nel sito..."> </div>
         </form>
+        <a class="btn btn-link mx-2 btn-sm" href="#"><i class="d-block fa fa-2x fa-comment"></i></a>
+        <a class="btn btn-link mx-2 btn-sm" href="#"><i class="d-block  fa fa-2x fa-cog"></i></a>
+        <a class="btn btn-link mx-2 btn-sm" href="#"><i class="fa fa-2x fa-bolt d-inline"></i><span class="badge badge-notification badge-danger float-right py-1">14</span></a>
+        <a class="btn btn-sm p-0">
+          <img class="img-fluid d-block rounded-circle border" src="assets/User.png" width="40"> </a>
       </div>
     </div>
   </nav>
@@ -96,53 +102,57 @@
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col px-5">
               <div class="row my-3">
                 <div class="col-10 align-items-center d-flex">
                   <h4 class="text-uppercase m-0"><i class="fa fa-fw fa-circle text-primary"></i>&nbsp;Riepilogo</h4>
                 </div>
                 <div class="col-2">
                   <form class="m-0">
-                    <div class="form-group m-0"><select class="form-control"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+                    <div class="form-group m-0"> <select class="form-control">
+                        <option value="Oggi">Oggi</option>
+                        <option value="Ultima settimana">Ultima settimana</option>
+                        <option value="Ultimo mese">Ultimo mese</option>
+                      </select></div>
                   </form>
                 </div>
               </div>
-              <hr>
+              <hr class="mb-0">
               <div class="row mb-4">
-                <div class="col-md-4 px-3 pt-">
+                <div class="col-md-4 p-3">
                   <div class="card riepilogo">
                     <div class="card-body">
                       <p class="lead m-0">Totale preventivi salvati</p>
                       <div class="row">
                         <div class="col-md-12 d-flex align-items-center">
                           <h1 class="display-4 m-0">58</h1>
-                          <p class="m-2 text-success">12% <i class="fa fa-caret-up d-inline"></i></p>
+                          <p class="mx-3 my-0 text-success">12% <i class="fa fa-caret-up d-inline"></i></p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 px-3">
+                <div class="col-md-4 p-3">
                   <div class="card border riepilogo">
                     <div class="card-body">
                       <p class="lead m-0">Totale certificati emessi</p>
                       <div class="row">
                         <div class="col-md-12 d-flex align-items-center">
                           <h1 class="display-4 m-0">47</h1>
-                          <p class="m-2 text-danger">27% <i class="fa fa-caret-down d-inline"></i></p>
+                          <p class="mx-3 my-0  text-danger">27% <i class="fa fa-caret-down d-inline"></i></p>
                         </div>
                       </div>
                       <div class="row"> </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 px-3">
+                <div class="col-md-4 p-3">
                   <div class="card riepilogo">
                     <div class="card-body">
                       <p class="lead m-0">Totale premi lordi</p>
                       <div class="col-md-12 d-flex align-items-center">
                         <h1 class="display-4 m-0">€ 2.500</h1>
-                        <p class="m-2">-</p>
+                        <p class="mx-3 my-0">-</p>
                       </div>
                     </div>
                   </div>
@@ -151,6 +161,7 @@
               <div class="row my-4">
                 <div class="col-md-8">
                   <h3 class="text-uppercase mb-3" contenteditable="true"><i class="fa fa-fw text-primary fa-file-text"></i>&nbsp;Documentazione</h3>
+                  <hr>
                   <div class="card">
                     <div class="card-body">
                       <div class="row mb-3">
@@ -192,6 +203,7 @@
                 </div>
                 <div class="col-md-4">
                   <h3 class="text-uppercase mb-3"><i class="fa fa-fw text-primary fa-pie-chart"></i>&nbsp;Diagramma a torta</h3>
+                  <hr>
                   <div class="card">
                     <div class="card-body">
                       <img class="img-fluid d-block" src="assets/pie.png">
@@ -208,6 +220,7 @@
               <div class="row my-4">
                 <div class="col-md-12">
                   <h3 class="text-uppercase mb-3"><i class="fa fa-fw text-primary fa-briefcase"></i>&nbsp;Premio lordo mensile</h3>
+                  <hr>
                   <div class="card">
                     <div class="card-body">
                       <img class="img-fluid d-block rounded" src="assets/grafico.jpg"> </div>
@@ -217,6 +230,7 @@
               <div class="row my-4">
                 <div class="col-md-12">
                   <h3 class="text-uppercase mb-3"><i class="fa fa-fw text-primary fa-list"></i>&nbsp;Dettaglio</h3>
+                  <hr>
                   <div class="card">
                     <div class="card-body">
                       <table class="table table-striped">
@@ -250,7 +264,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 d-none d-lg-block border-left">
+            <div class="col-md-3 d-none d-lg-block border-left px-3">
               <div class="row my-4">
                 <div class="col-md-12">
                   <h4><i class="fa fa-fw fa-link text-primary"></i>&nbsp;Link veloci</h4>
