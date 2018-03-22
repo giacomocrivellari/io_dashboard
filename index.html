@@ -91,12 +91,21 @@
           </div>
           <div class="row border-bottom p-0">
             <div class="col-md-12 p-0 pippo">
-              <a data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-toggle="popover" data-placement="right" data-trigger="hover">
+              <a data-popover-content="#unique-id" data-toggle="popover" data-placement="right" data-trigger="hover">
                 <p class="text-dark m-3"><i class="fa d-inline fa-heart text-primary fa-lg"></i><b class=""> INFORTUNI E MALATTIA</b><i class="fa d-inline fa-angle-down px-1 float-right arrow-box"></i></p>
               </a>
-              <ul class="list-unstyled pl-4 collapse" id="collapseExample4">
-                <li class=""><b>Infortuni</b></li>
-              </ul>
+              <div id="unique-id" style="display:none;">
+                <div class="popover-heading">
+                  <p class="text-dark m-3"><i class="fa d-inline fa-heart text-primary fa-lg"></i><b> INFORTUNI E MALATTIA</b></p>
+                </div>
+                <div class="popover-body">
+                  <ul class="list-unstyled pl-4">
+                    <li class=""><b>Infortuni 1</b></li>
+                    <li class=""><b>Infortuni 2</b></li>
+                    <li class=""><b>Infortuni 3</b></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -389,10 +398,25 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
+  <!-- <script>
     $(function () {
     $('[data-toggle="popover"]').popover()
     })
+  </script> -->
+  <script>
+    $(function(){
+          $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+                var content = $(this).attr("data-popover-content");
+                return $(content).children(".popover-body").html();
+            },
+            title: function() {
+                var title = $(this).attr("data-popover-content");
+                return $(title).children(".popover-heading").html();
+            }
+        });    
+  		});
   </script>
 </body>
 
