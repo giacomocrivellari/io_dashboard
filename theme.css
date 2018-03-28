@@ -6143,3 +6143,7 @@ hr:after {
 .pippo:hover {
   background: #1eaba6;
   transform: scale(1.02); }
+
+.card-body .message {
+  flex: 1 1 auto;
+  padding-left: 1.25rem; }
