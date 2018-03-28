@@ -114,11 +114,24 @@ hr:after{
   }
 }
 
-.pippo {
+.right-panel {
 	transition: all .2s;
+  i {
+  color: theme-color("primary");
+  }
+  .fa-angle-down {
+    margin-top:3px;
+  }
 }
 
-.pippo:hover {
+.right-panel:hover {
 	background: theme-color("secondary");
   transform: scale(1.02);
+  color: white;
+  i {
+  color:white;
+  }
+  .fa-angle-down {
+    transform: rotate(-90deg);
+  }
 }

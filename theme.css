@@ -6137,9 +6137,18 @@ hr:after {
 .input-group .form-control {
   border-left: none; }
 
-.pippo {
+.right-panel {
   transition: all .2s; }
+  .right-panel i {
+    color: #999; }
+  .right-panel .fa-angle-down {
+    margin-top: 3px; }
 
-.pippo:hover {
+.right-panel:hover {
   background: #1eaba6;
-  transform: scale(1.02); }
+  transform: scale(1.02);
+  color: white; }
+  .right-panel:hover i {
+    color: white; }
+  .right-panel:hover .fa-angle-down {
+    transform: rotate(-90deg); }
