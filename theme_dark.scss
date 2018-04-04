@@ -19,8 +19,8 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #1eaba6,
-  secondary: #4f70ce,
+  primary: #999,
+  secondary: #1eaba6,
   light: #f2f4f7,
   dark: #151515,
   info: #ccc,
@@ -29,141 +29,120 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: black;
+$body-bg: #3b3b3b;
 
 
 
 
-
-$body-color: white;
-
-
+$body-color: #f2f4f7;
 
 
 $body-color-inverse: invert($body-color) !default;
-$link-color: #1eaba6;
-
+$link-color: #999;
 
 // Fonts
 $font-family-base: Quicksand;
-
-
-
 $headings-font-family: $font-family-base;
-
-
 $display-font-family: $font-family-base;
 $font-weight-normal: 500;
 $headings-font-weight: 200;
 $lead-font-size:   1.30rem;
+$display4-size: 2.5rem;
+$display4-weight: 500;
 
 
 //Breadcrumb
 $breadcrumb-bg: $body-bg;
 
-$border-radius: 1rem;
+$border-radius: .3rem;
 $border-radius-lg: $border-radius * 1.2;
 $border-radius-sm: $border-radius * .8;
+$card-border-radius:  $border-radius * 3;
+
+$input-border-radius:                   $border-radius * 3;
+$input-border-radius-lg:                $border-radius-lg * 3;
+$input-border-radius-sm:                $border-radius-sm * 3;
+
+$input-box-shadow:                      none;
+$input-group-addon-bg:                  white;
 
 
 $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
-
+$popover-arrow-width:               0rem;
 
 @import 'bootstrap-4.0.0';
 
- 
-html,body {
-   height:100%;
-}
-
-.cover {
-	min-height:100%;
-  display:flex;
-  align-items:center
-}
-
-
-.bg-gradient {
-  overflow: hidden;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-  background: linear-gradient(-30deg, theme-color("secondary") 0%, theme-color("primary") 50%, theme-color("primary") 100%);
-}
-
-.filter-dark {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'dark'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'dark'), 0.75);
-  }
-}
-
-.filter-light {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'light'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'light'),0.75);
-  }
-}
-
-.filter-color {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(map-get($theme-colors, 'primary'), 0.75);
-  }
-}
-
-.filter-gradient {
-  overflow: hidden;
-  position: relative;
-  color: color-yiq(map-get($theme-colors, 'primary'));
-	&:before {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    content: ' ';
-    background: linear-gradient(-30deg, transparentize(theme-color("secondary"), 0.1) 0%, transparentize(theme-color("primary"), 0.1) 50%, transparentize(theme-color("primary"), 0.05) 100%);
-  }
-}
-
-.arrow-box {
-	margin-top:4px; 
-  border-radius:2px;
-}
-
-/* CUSTOM BY LEN */
-
-.card:hover, .hilight:hover {
-  /* color: theme-color("primary"); */
-  transform:scale(1.02);
-}
-
 .card {
-  box-shadow: 0 .25rem .75rem rgba(map-get($theme-colors, 'dark'), .08);
-	transition: transform .2s;
+	box-shadow: 0 .25rem .75rem rgba(map-get($theme-colors, 'dark'), .08);
+}
+
+.riepilogo {
+  transition: all .2s;
+	&:hover {
+	color: theme-color("secondary");
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 .4rem 1rem rgba(map-get($theme-colors, 'dark'), .15);
+	}
+}
+
+.badge-notification {
+  margin-top:-.8rem;
+  margin-top:-.8rem;
+}
+
+hr:after{
+  content: "";  
+  background: theme-color("secondary");
+  display: block;
+  height:6px;
+  width:18px;
+  border-radius: 3px;
+  position: relative;
+  top:-3px;
+}
+
+.input-group {
+  .input-group-prepend {
+    border-right: none;
+  }
+  .form-control {
+ 		border-left: none; 
+  }
+}
+
+.right-panel {
+	transition: all .2s;
+  i {
+  color: theme-color("primary");
+  }
+  .fa-angle-down {
+    margin-top:3px;
+  }
+}
+
+.right-panel:hover {
+	background: theme-color("secondary");
+  transform: scale(1.02);
+  color: white;
+  i {
+  color:white;
+  }
+  .fa-angle-down {
+    transform: rotate(-90deg);
+  }
+}
+
+.message {
+  flex: 1 1 auto;
+  padding-left: 1.25rem; }
+
+.profile-img {
+    width: 60px;
+}
+
+.popover {
+ 	background: theme-color("secondary");
+  width:300px;
 }
