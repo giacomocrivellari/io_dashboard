@@ -6154,4 +6154,16 @@ hr:after {
 
 .popover {
   background: #1eaba6;
-  width: 300px; }
+  width: 100%;
+  transition: all .2s; }
+  .popover li {
+    position: relative;
+    margin-left: 15px; }
+  .popover li:hover:before {
+    transform: translateX(-2px);
+    content: "";
+    position: absolute;
+    background: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%; }
