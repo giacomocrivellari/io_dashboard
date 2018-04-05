@@ -6174,3 +6174,42 @@ hr:after {
 .quick-links .btn:hover {
   background: #f2f2f2;
   border: 1px solid #ccc; }
+
+.timeline {
+  padding-left: 20px; }
+  .timeline ul {
+    list-style-type: none;
+    position: relative;
+    padding: 0px 0 25px 10px;
+    margin: 0; }
+    .timeline ul:after {
+      content: "";
+      position: absolute;
+      left: -4.5px;
+      bottom: 0;
+      border-left: 1px solid #ccc;
+      height: 100%; }
+    .timeline ul li {
+      margin: 15px 0 35px 10px;
+      position: relative;
+      display: block; }
+      .timeline ul li:last-child {
+        margin-bottom: 0px; }
+      .timeline ul li .card {
+        display: block;
+        border: 1px solid #ccc;
+        padding: 15px;
+        background: #f1f1f1; }
+      .timeline ul li:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid rgba(40, 40, 40, 0.5);
+        position: absolute;
+        z-index: 2;
+        left: -30px;
+        outline: 2px solid white;
+        top: 35px; }

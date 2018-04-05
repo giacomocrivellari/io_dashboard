@@ -303,7 +303,7 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                           <ul class="nav nav-tabs">
                             <li class="nav-item">
                               <a class="active nav-link" href="" data-toggle="tab" data-target="#tabone">Tab 1</a>
@@ -316,14 +316,16 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-4">
-                          <ul class="nav nav-tabs">
-                            <div class="btn-group">
-                              <a href="#" class="btn">Filtro 1</a>
-                              <a href="#" class="btn">Filtro 2</a>
-                              <a href="#" class="btn">Filtro 3</a>
-                            </div>
-                          </ul>
+                        <div class="col-md-5 text-center">
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons"> <label class="btn btn-light active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked="" value="on"> Oggi
+                              </label> <label class="btn btn-light">
+                                <input type="radio" name="options" id="option2" autocomplete="off" value="on"> 7 giorni
+                              </label> <label class="btn btn-light">
+                                <input type="radio" name="options" id="option3" autocomplete="off" value="on"> 30 giorni
+                              </label><label class="btn btn-light">
+                                <input type="radio" name="options" id="option4" autocomplete="off" value="on"> 1 anno
+                              </label> </div>
                         </div>
                       </div>
                       <div class="tab-content mt-2">
@@ -448,35 +450,50 @@
                 </div>
               </div>
               <div class="row my-4">
-                <div class="col-md-12">
+                <div class="col-md-12 timeline">
                   <h4> <i class="fa fa-fw fa-clock-o text-primary"></i>&nbsp;Attività recenti</h4>
-                  <hr>
+                  <hr> </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-md-12 timeline">
                   <ul>
                     <li>
-                      <div class="card">
-                        <div class="card-body">
+                      <div class="card p-0">
+                        <div class="card-body py-2">
                           <div class="row">
                             <div class="col-md-4 p-0">
                               <img class="img-fluid d-block rounded-circle border" src="assets/team-member-3.png"> </div>
-                            <div class="col-md-8">
-                              <p class="m-1"> <b>Marco Rossi</b> </p>
-                              <p class="m-0"> <small>OPENED NEW ACCOUNT</small> </p>
+                            <div class="col-md-8 d-flex flex-column align-self-center">
+                              <p class="mb-1"> <b>Marco Rossi</b> </p>
+                              <p class="m-0 text-uppercase"><small>New account</small></p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
-                  </ul>
-                  <ul>
                     <li>
-                      <div class="card">
-                        <div class="card-body">
+                      <div class="card p-0">
+                        <div class="card-body py-2">
                           <div class="row">
                             <div class="col-md-4 p-0">
                               <img class="img-fluid d-block rounded-circle border" src="assets/team-member-3.png"> </div>
-                            <div class="col-md-8">
-                              <p class="m-1"> <b>Marco Rossi</b> </p>
-                              <p class="m-0"> <small>OPENED NEW ACCOUNT</small> </p>
+                            <div class="col-md-8 d-flex flex-column align-self-center">
+                              <p class="mb-1"> <b>Marco Rossi</b> </p>
+                              <p class="m-0 text-uppercase"><small>New account</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card p-0">
+                        <div class="card-body py-2">
+                          <div class="row">
+                            <div class="col-md-4 p-0">
+                              <img class="img-fluid d-block rounded-circle border" src="assets/team-member-3.png"> </div>
+                            <div class="col-md-8 d-flex flex-column align-self-center">
+                              <p class="mb-1"> <b>Marco Rossi</b> </p>
+                              <p class="m-0 text-uppercase"><small>New account</small></p>
                             </div>
                           </div>
                         </div>
