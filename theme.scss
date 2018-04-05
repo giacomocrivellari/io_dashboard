@@ -68,6 +68,7 @@ $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
 $popover-arrow-width:               0rem;
+$popover-max-width:                 500px;
 
 @import 'bootstrap-4.0.0';
 
@@ -141,7 +142,7 @@ hr:after{
 
 .popover {
  	background: theme-color("secondary");
-  width:100%;
+  width:400px;
   li {
   	margin-left:15px;
     color:white;
@@ -153,7 +154,17 @@ hr:after{
     height:6px;
     width:6px;
     border-radius: 3px;
-    position: relative;
     left: -10px;
+    position: relative;
+  }
+}
+
+.quick-links {
+ .btn {
+  	background: white;
+  }
+  .btn:hover {
+  	background: darken(white, 5%);
+    border: 1px solid theme-color("info");
   }
 }

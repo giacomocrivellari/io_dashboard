@@ -3838,7 +3838,7 @@ button.close {
   left: 0;
   z-index: 1060;
   display: block;
-  max-width: 276px;
+  max-width: 500px;
   font-family: Quicksand;
   font-style: normal;
   font-weight: 500;
@@ -6154,7 +6154,7 @@ hr:after {
 
 .popover {
   background: #1eaba6;
-  width: 100%; }
+  width: 400px; }
   .popover li {
     margin-left: 15px;
     color: white; }
@@ -6165,5 +6165,12 @@ hr:after {
     height: 6px;
     width: 6px;
     border-radius: 3px;
-    position: relative;
-    left: -10px; }
+    left: -10px;
+    position: relative; }
+
+.quick-links .btn {
+  background: white; }
+
+.quick-links .btn:hover {
+  background: #f2f2f2;
+  border: 1px solid #ccc; }
