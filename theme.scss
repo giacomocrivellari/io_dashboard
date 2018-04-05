@@ -142,18 +142,18 @@ hr:after{
 .popover {
  	background: theme-color("secondary");
   width:100%;
-  transition: all .2s;
   li {
-  position:relative;
-  margin-left:15px;  
+  	margin-left:15px;
+    color:white;
   }
   li:hover:before {
-  	transform: translateX(-2px);
-    content: "";
-    position: absolute;
-    background: red;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
+    content: "";  
+    background: theme-color("dark");
+    display: inline-block;
+    height:6px;
+    width:6px;
+    border-radius: 3px;
+    position: relative;
+    left: -10px;
   }
 }

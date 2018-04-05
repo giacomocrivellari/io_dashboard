@@ -6154,16 +6154,16 @@ hr:after {
 
 .popover {
   background: #1eaba6;
-  width: 100%;
-  transition: all .2s; }
+  width: 100%; }
   .popover li {
-    position: relative;
-    margin-left: 15px; }
+    margin-left: 15px;
+    color: white; }
   .popover li:hover:before {
-    transform: translateX(-2px);
     content: "";
-    position: absolute;
-    background: red;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%; }
+    background: #151515;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    position: relative;
+    left: -10px; }
