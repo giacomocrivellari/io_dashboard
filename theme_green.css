@@ -6154,7 +6154,7 @@ hr:after {
 
 .popover {
   background: #1eaba6;
-  width: 450px; }
+  width: 400px; }
   .popover li {
     margin-left: 15px;
     color: white;
@@ -6173,9 +6173,8 @@ hr:after {
   background: white; }
 
 .quick-links .btn:hover {
-  background: #1eaba6;
-  border: 1px solid #ccc;
-  color: white; }
+  background: #f2f2f2;
+  border: 1px solid #ccc; }
 
 .timeline {
   padding-left: 20px; }

@@ -142,7 +142,7 @@ hr:after{
 
 .popover {
  	background: theme-color("secondary");
-  width:550px;
+  width:400px;
   li {
   	margin-left:15px;
     color:white;
@@ -165,9 +165,8 @@ hr:after{
   	background: white;
   }
   .btn:hover {
-  	background: theme-color("secondary");
+  	background: darken(white, 5%);
     border: 1px solid theme-color("info");
-    color:white;
   }
 }
 
