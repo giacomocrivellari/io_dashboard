@@ -30,6 +30,8 @@ $theme-colors: (
 );
 
 $body-bg: #f2f4f7;
+
+
 $body-color: #3b3b3b;
 
 $body-color-inverse: invert($body-color) !default;
@@ -65,6 +67,8 @@ $input-group-addon-bg:                  white;
 $font-size-base: 0.8rem;
 $link-hover-decoration: none;
 
+$popover-arrow-width:               0rem;
+
 @import 'bootstrap-4.0.0';
 
 .card {
@@ -95,15 +99,6 @@ hr:after{
   position: relative;
   top:-3px;
 }
-
-/*treecontrol li i.tree-branch-head {
-   cursor: pointer;
-   &:before {
-   	font-family: FontAwesome;
-   	content: "\f0da";
-   	font-style: normal;
-	}
-}*/
 
 .input-group {
   .input-group-prepend {
@@ -142,4 +137,9 @@ hr:after{
 
 .profile-img {
     width: 60px;
+}
+
+.popover {
+ 	background: theme-color("secondary");
+  width:100%;
 }
