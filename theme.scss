@@ -112,6 +112,7 @@ hr:after{
 
 .right-panel {
 	transition: all .2s;
+  cursor:pointer;
   i {
   color: theme-color("primary");
   }
@@ -141,22 +142,33 @@ hr:after{
 }
 
 .popover {
- 	background: theme-color("secondary");
+ 	background: theme-color("light");
   width:400px;
   li {
-  	margin-left:15px;
-    color:white;
+    b {
+    	margin-bottom:0px;
+      padding-left: 20px;
+      color: theme-color("dark");
+    }
   }
-  li:hover:before {
+  li:hover {
+  	background: theme-color("secondary"); 
+    b {
+    	padding-left: 15px;
+      color:white;
+      transform:translateX(-5px);
+    }
+  	b:before {
     content: "";  
-    background: theme-color("dark");
+    background: gold;
     display: inline-block;
-    height:6px;
-    width:6px;
+    height:5px;
+    width:5px;
     border-radius: 3px;
-    left: -10px;
+    left: -3px;
     position: relative;
   }
+ }  
 }
 
 .quick-links {

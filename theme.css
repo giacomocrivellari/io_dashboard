@@ -6130,7 +6130,8 @@ hr:after {
   border-left: none; }
 
 .right-panel {
-  transition: all .2s; }
+  transition: all .2s;
+  cursor: pointer; }
   .right-panel i {
     color: #999; }
   .right-panel .fa-angle-down {
@@ -6153,20 +6154,27 @@ hr:after {
   width: 60px; }
 
 .popover {
-  background: #1eaba6;
+  background: #f2f4f7;
   width: 400px; }
-  .popover li {
-    margin-left: 15px;
-    color: white; }
-  .popover li:hover:before {
-    content: "";
-    background: #151515;
-    display: inline-block;
-    height: 6px;
-    width: 6px;
-    border-radius: 3px;
-    left: -10px;
-    position: relative; }
+  .popover li b {
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: #151515; }
+  .popover li:hover {
+    background: #1eaba6; }
+    .popover li:hover b {
+      padding-left: 15px;
+      color: white;
+      transform: translateX(-5px); }
+    .popover li:hover b:before {
+      content: "";
+      background: gold;
+      display: inline-block;
+      height: 5px;
+      width: 5px;
+      border-radius: 3px;
+      left: -3px;
+      position: relative; }
 
 .quick-links .btn {
   background: white; }
