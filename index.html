@@ -81,9 +81,7 @@
               <a class="btn btn-link mx-2 btn-sm" href="#">
                 <i class="d-block fa fa-2x fa-comment"></i>
               </a>
-              <a class="btn btn-link mx-2 btn-sm" data-container="#tl" data-placement="bottom" data-popover-content="#themes-left" data-toggle="popover" data-trigger="hover" id="tl">
-                <i class="d-block text-primary fa fa-2x fa-cog"></i>
-              </a>
+              <i class="d-block text-primary fa fa-2x fa-cog" data-container="#tl" data-placement="bottom" data-popover-content="#themes-left" data-toggle="popover" data-trigger="hover" id="tl"></i>
               <div id="themes-left" class="pl-5 ml-3" style="display:none;">
                 <div class="popover-heading">
                   <p class="text-dark my-2">
@@ -421,7 +419,7 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                           <ul class="nav nav-tabs">
                             <li class="nav-item">
                               <a class="active nav-link" href="" data-toggle="tab" data-target="#tabone">Tab 1</a>
@@ -434,17 +432,21 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-5 text-center">
-                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-light active">
-                              <input type="radio" name="options" id="option1" autocomplete="off" checked="" value="on"> Oggi </label>
-                            <label class="btn btn-light">
-                              <input type="radio" name="options" id="option2" autocomplete="off" value="on"> 7 giorni </label>
-                            <label class="btn btn-light">
-                              <input type="radio" name="options" id="option3" autocomplete="off" value="on"> 30 giorni </label>
-                            <label class="btn btn-light">
-                              <input type="radio" name="options" id="option4" autocomplete="off" value="on"> 1 anno </label>
-                          </div>
+                        <div class="col-md-6 text-center d-flex justify-content-center">
+                          <ul class="nav nav-pills">
+                            <li class="nav-item">
+                              <a href="#" class="active nav-link" contenteditable="true"> Oggi</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">7 giorni</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">14 giorni</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Ultimo mese</a>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                       <div class="tab-content mt-2">

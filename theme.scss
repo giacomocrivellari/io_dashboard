@@ -70,6 +70,12 @@ $link-hover-decoration: none;
 $popover-arrow-width:               0rem;
 $popover-max-width:                 500px;
 
+
+$nav-tabs-link-hover-border-color:  none;
+$nav-tabs-link-active-color:        none;
+$nav-tabs-link-active-bg:           none;
+$nav-tabs-link-active-border-color: none;
+
 @import 'bootstrap-4.0.0';
 
 .card {
@@ -227,5 +233,28 @@ $size: 10px;
         top: 35px; 
       }
     }
+  }
+}
+
+.radio-btn-group > * {
+	color:theme-color("dark");
+  &.active {
+  	background:theme-color("secondary");
+    color: white;
+    box-shadow:none;
+  }
+}
+
+.nav-tabs {
+.nav-link.active {
+  color:theme-color("dark");
+  border-bottom: 3px solid theme-color("secondary");
+  }
+}
+
+.nav-pills {
+.nav-link.active {
+  background-color:theme-color("secondary");
+  color:theme-color("light");
   }
 }

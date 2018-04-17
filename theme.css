@@ -2644,16 +2644,16 @@ tbody.collapse.show {
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #e9ecef #e9ecef #dee2e6; }
+      border-color: none; }
     .nav-tabs .nav-link.disabled {
       color: #6c757d;
       background-color: transparent;
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
-    background-color: #f2f4f7;
-    border-color: #dee2e6 #dee2e6 #f2f4f7; }
+    color: none;
+    background-color: none;
+    border-color: none; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -6221,3 +6221,18 @@ hr:after {
         left: -30px;
         outline: 2px solid white;
         top: 35px; }
+
+.radio-btn-group > * {
+  color: #151515; }
+  .radio-btn-group > *.active {
+    background: #1eaba6;
+    color: white;
+    box-shadow: none; }
+
+.nav-tabs .nav-link.active {
+  color: #151515;
+  border-bottom: 3px solid #1eaba6; }
+
+.nav-pills .nav-link.active {
+  background-color: #1eaba6;
+  color: #f2f4f7; }
