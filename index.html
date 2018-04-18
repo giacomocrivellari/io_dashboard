@@ -25,12 +25,28 @@
             </div>
             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ricerca nel sito..."> </div>
         </form>
-        <a class="btn btn-link mx-2 btn-sm" href="#">
-          <i class="d-block fa fa-2x fa-comment"></i>
-        </a>
-        <a class="btn btn-link mx-2 btn-sm" data-container="#tr" data-placement="bottom" data-popover-content="#themes-right" data-toggle="popover" data-trigger="hover" id="tr">
-          <i class="d-block text-primary fa fa-2x fa-cog"></i>
-        </a>
+        <i class="d-block text-primary fa fa-2x fa-comment mx-3" data-container="#mexr" data-placement="bottom" data-popover-content="#message-right" data-toggle="popover" data-trigger="hover" id="mexr"></i>
+        <div id="message-right" class="pl-5 ml-3" style="display:none;">
+          <div class="popover-heading">
+            <p class="text-dark my-2">
+              <b>Messaggi</b>
+            </p>
+          </div>
+          <div class="popover-body">
+            <ul class="list-unstyled ">
+              <li class="p-2 bg-dark">
+                <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
+              </li>
+              <li class="p-2 bg-success">
+                <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
+              </li>
+              <li class="p-2 bg-light">
+                <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="d-block text-primary fa fa-2x fa-cog mx-3" data-container="#tr" data-placement="bottom" data-popover-content="#themes-right" data-toggle="popover" data-trigger="hover" id="tr"></i>
         <div id="themes-right" class="pl-5 ml-3" style="display:none;">
           <div class="popover-heading">
             <p class="text-dark my-2">
@@ -51,10 +67,29 @@
             </ul>
           </div>
         </div>
-        <a class="btn btn-link mx-2 btn-sm" href="#">
-          <i class="fa fa-2x fa-bolt d-inline"></i>
-          <span class="badge badge-notification badge-danger float-right py-1">14</span>
-        </a>
+        <i class="d-block text-primary fa fa-2x fa-bolt d-inline mx-3" data-container="#notr" data-placement="bottom" data-popover-content="#notification-right" data-toggle="popover" data-trigger="hover" id="notr">
+          <span class="badge badge-notification badge-danger float-right">14</span>
+        </i>
+        <div id="notification-right" class="pl-5 ml-3" style="display:none;">
+          <div class="popover-heading">
+            <p class="text-dark my-2">
+              <b>Notifiche</b>
+            </p>
+          </div>
+          <div class="popover-body">
+            <ul class="list-unstyled ">
+              <li class="p-2 bg-dark">
+                <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
+              </li>
+              <li class="p-2 bg-success">
+                <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
+              </li>
+              <li class="p-2 bg-light">
+                <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <a class="btn btn-sm p-0">
           <img class="img-fluid d-block rounded-circle border" src="assets/User.png" width="40"> </a>
       </div>
@@ -78,10 +113,28 @@
           </div>
           <div class="row p-3 border-bottom">
             <div class="col-md-12 d-flex p-0 justify-content-around">
-              <a class="btn btn-link mx-2 btn-sm" href="#">
-                <i class="d-block fa fa-2x fa-comment"></i>
-              </a>
-              <i class="d-block text-primary fa fa-2x fa-cog" data-container="#tl" data-placement="bottom" data-popover-content="#themes-left" data-toggle="popover" data-trigger="hover" id="tl"></i>
+              <i class="d-block text-primary fa fa-2x fa-comment mt-1" data-container="#mexl" data-placement="bottom" data-popover-content="#message-left" data-toggle="popover" data-trigger="hover" id="mexl"></i>
+              <div id="message-left" class="pl-5 ml-3" style="display:none;">
+                <div class="popover-heading">
+                  <p class="text-dark my-2">
+                    <b>Messaggi</b>
+                  </p>
+                </div>
+                <div class="popover-body">
+                  <ul class="list-unstyled ">
+                    <li class="p-2 bg-dark">
+                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
+                    </li>
+                    <li class="p-2 bg-success">
+                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
+                    </li>
+                    <li class="p-2 bg-light">
+                      <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <i class="d-block text-primary fa fa-2x fa-cog mt-1" data-container="#tl" data-placement="bottom" data-popover-content="#themes-left" data-toggle="popover" data-trigger="hover" id="tl"></i>
               <div id="themes-left" class="pl-5 ml-3" style="display:none;">
                 <div class="popover-heading">
                   <p class="text-dark my-2">
@@ -102,10 +155,29 @@
                   </ul>
                 </div>
               </div>
-              <a class="btn btn-link mx-2 btn-sm" href="#">
-                <i class="fa fa-2x fa-bolt d-inline"></i>
-                <span class="badge badge-notification badge-danger float-right py-1">14</span>
-              </a>
+              <i class="d-block text-primary fa fa-2x fa-bolt d-inline mt-1" data-container="#notl" data-placement="bottom" data-popover-content="#notification-left" data-toggle="popover" data-trigger="hover" id="notl">
+                <span class="badge badge-notification badge-danger float-right">14</span>
+              </i>
+              <div id="notification-left" class="pl-5 ml-3" style="display:none;">
+                <div class="popover-heading">
+                  <p class="text-dark my-2">
+                    <b>Notifiche</b>
+                  </p>
+                </div>
+                <div class="popover-body">
+                  <ul class="list-unstyled ">
+                    <li class="p-2 bg-dark">
+                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
+                    </li>
+                    <li class="p-2 bg-success">
+                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
+                    </li>
+                    <li class="p-2 bg-light">
+                      <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row border-bottom p-0" data-popover-content="#professioni" data-toggle="popover" data-container="#prof" id="prof" data-placement="right" data-trigger="hover">

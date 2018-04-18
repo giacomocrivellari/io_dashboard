@@ -6111,7 +6111,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .badge-notification {
   margin-top: -.8rem;
-  margin-top: -.8rem; }
+  font-size: .7rem;
+  font-family: Quicksand; }
 
 hr:after {
   content: "";
