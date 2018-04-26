@@ -25,28 +25,81 @@
             </div>
             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ricerca nel sito..."> </div>
         </form>
-        <i class="d-block text-primary fa fa-2x fa-comment mx-3" data-container="#mexr" data-placement="bottom" data-popover-content="#message-right" data-toggle="popover" data-trigger="hover" id="mexr"></i>
-        <div id="message-right" class="pl-5 ml-3" style="display:none;">
+        <a class="btn btn-link mx-2 btn-sm" data-container="#tr" data-placement="bottom" data-popover-content="#themes-right" data-toggle="popover" data-trigger="hover" id="tr">
+          <i class="d-block text-primary fa fa-2x fa-comment"></i>
+        </a>
+        <div id="themes-right" class="pl-5 ml-3" style="display:none;">
           <div class="popover-heading">
-            <p class="text-dark my-2">
-              <b>Messaggi</b>
-            </p>
+            <p class="text-dark my-2"> </p>
+            <h3>Messaggi</h3>
+            <p></p>
           </div>
           <div class="popover-body">
-            <ul class="list-unstyled ">
-              <li class="p-2 bg-dark">
-                <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
-              </li>
-              <li class="p-2 bg-success">
-                <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
-              </li>
-              <li class="p-2 bg-light">
-                <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
-              </li>
-            </ul>
+            <div class="card riepilogo my-2">
+              <div class="card-body p-2">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <img class="img-fluid d-block rounded-circle border profile-img mx-auto" src="assets/team-member-1.png">
+                    <p class="text-center mt-1 mb-0">
+                      <b>Marco Rossi</b>
+                    </p>
+                    <p class="text-center m-0">
+                      <small>BROKER</small>
+                    </p>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="mt-2 mb-0">15/11/2017</p>
+                    <p>Must discuss</p>
+                    <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card riepilogo my-2">
+              <div class="card-body p-2">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-3.png" width="60">
+                    <p class="text-center mt-1 mb-0">
+                      <b>Marco Rossi</b>
+                    </p>
+                    <p class="text-center m-0">
+                      <small>BROKER</small>
+                    </p>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="mt-2 mb-0">15/11/2017</p>
+                    <p>Must discuss</p>
+                    <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card riepilogo">
+              <div class="card-body p-2">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-1.png" width="60">
+                    <p class="text-center mt-1 mb-0">
+                      <b>Marco Rossi</b>
+                    </p>
+                    <p class="text-center m-0">
+                      <small>BROKER</small>
+                    </p>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="mt-2 mb-0">15/11/2017</p>
+                    <p>Must discuss</p>
+                    <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <i class="d-block text-primary fa fa-2x fa-cog mx-3" data-container="#tr" data-placement="bottom" data-popover-content="#themes-right" data-toggle="popover" data-trigger="hover" id="tr"></i>
+        <a class="btn btn-link mx-2 btn-sm" data-container="#tr" data-placement="bottom" data-popover-content="#themes-right" data-toggle="popover" data-trigger="hover" id="tr">
+          <i class="d-block text-primary fa fa-2x fa-cog"></i>
+        </a>
         <div id="themes-right" class="pl-5 ml-3" style="display:none;">
           <div class="popover-heading">
             <p class="text-dark my-2">
@@ -67,31 +120,12 @@
             </ul>
           </div>
         </div>
-        <i class="d-block text-primary fa fa-2x fa-bolt d-inline mx-3" data-container="#notr" data-placement="bottom" data-popover-content="#notification-right" data-toggle="popover" data-trigger="hover" id="notr">
-          <span class="badge badge-notification badge-danger float-right">14</span>
-        </i>
-        <div id="notification-right" class="pl-5 ml-3" style="display:none;">
-          <div class="popover-heading">
-            <p class="text-dark my-2">
-              <b>Notifiche</b>
-            </p>
-          </div>
-          <div class="popover-body">
-            <ul class="list-unstyled ">
-              <li class="p-2 bg-dark">
-                <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
-              </li>
-              <li class="p-2 bg-success">
-                <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
-              </li>
-              <li class="p-2 bg-light">
-                <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <a class="btn btn-link mx-2 btn-sm" href="#">
+          <i class="fa fa-2x fa-bolt d-inline"></i>
+          <span class="badge badge-notification badge-danger float-right py-1">14</span>
+        </a>
         <a class="btn btn-sm p-0">
-          <img class="img-fluid d-block rounded-circle border" src="assets/User.png" width="40"> </a>
+          <img class="img-fluid d-block rounded-circle border" src="assets/user-2.jpg" width="40"> </a>
       </div>
     </div>
   </nav>
@@ -101,7 +135,7 @@
         <div class="col-xl-2 border-right">
           <div class="row p-3 border-bottom">
             <div class="col-md-4 d-flex align-items-center col-2 p-2">
-              <img class="img-fluid d-block rounded-circle border" src="assets/User.png"> </div>
+              <img class="img-fluid d-block rounded-circle border" src="assets/user-2.jpg"> </div>
             <div class="d-flex flex-column align-self-center col-10 col-md-8">
               <p class="m-0">
                 <b>Marco Rossi</b>
@@ -116,41 +150,90 @@
               <i class="d-block text-primary fa fa-2x fa-comment mt-1" data-container="#mexl" data-placement="bottom" data-popover-content="#message-left" data-toggle="popover" data-trigger="hover" id="mexl"></i>
               <div id="message-left" class="pl-5 ml-3" style="display:none;">
                 <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <b>Messaggi</b>
-                  </p>
+                  <p class="text-dark my-2"> </p>
+                  <h3>Messaggi</h3>
+                  <p></p>
                 </div>
                 <div class="popover-body">
-                  <ul class="list-unstyled ">
-                    <li class="p-2 bg-dark">
-                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
-                    </li>
-                    <li class="p-2 bg-success">
-                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
-                    </li>
-                    <li class="p-2 bg-light">
-                      <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
-                    </li>
-                  </ul>
+                  <div class="card riepilogo my-2">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border profile-img mx-auto" src="assets/team-member-1.png">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card riepilogo my-2">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-3.png" width="60">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card riepilogo">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-1.png" width="60">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <i class="d-block text-primary fa fa-2x fa-cog mt-1" data-container="#tl" data-placement="bottom" data-popover-content="#themes-left" data-toggle="popover" data-trigger="hover" id="tl"></i>
               <div id="themes-left" class="pl-5 ml-3" style="display:none;">
                 <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <b>Scegli un tema</b>
-                  </p>
+                  <p class="text-dark my-2"> </p>
+                  <h3>Scegli un tema</h3>
+                  <p></p>
                 </div>
                 <div class="popover-body">
                   <ul class="list-unstyled ">
-                    <li class="p-2 bg-dark">
-                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
-                    </li>
-                    <li class="p-2 bg-success">
-                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
-                    </li>
                     <li class="p-2 bg-light">
                       <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
+                    </li>
+                    <li class="p-2 bg-medium">
+                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Medium </a>
+                    </li>
+                    <li class="p-2 bg-dark">
+                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
                     </li>
                   </ul>
                 </div>
@@ -160,193 +243,220 @@
               </i>
               <div id="notification-left" class="pl-5 ml-3" style="display:none;">
                 <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <b>Notifiche</b>
-                  </p>
+                  <p class="text-dark my-2"> </p>
+                  <h3>Notifiche</h3>
+                  <p></p>
                 </div>
                 <div class="popover-body">
-                  <ul class="list-unstyled ">
-                    <li class="p-2 bg-dark">
-                      <a href="#" onclick="loadTheme('theme_dark.css')" class="text-light">Dark </a>
-                    </li>
-                    <li class="p-2 bg-success">
-                      <a href="#" onclick="loadTheme('theme_green.css')" class="text-light">Verde </a>
-                    </li>
-                    <li class="p-2 bg-light">
-                      <a href="#" onclick="loadTheme('theme.css')" class="text-dark">Light </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row border-bottom p-0" data-popover-content="#professioni" data-toggle="popover" data-container="#prof" id="prof" data-placement="right" data-trigger="hover">
-            <div class="col-md-12 right-panel">
-              <p class="my-3">
-                <i class="fa d-inline fa-university fa-lg"></i>
-                <b> PROFESSIONI LIBERALI</b>
-                <i class="fa d-inline fa-angle-down px-1 float-right"></i>
-              </p>
-              <div id="professioni" class="pl-5 ml-3" style="display:none;">
-                <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <i class="fa d-inline fa-university text-primary fa-lg"></i>
-                    <b> PROFESSIONI LIBERALI</b>
-                  </p>
-                </div>
-                <div class="popover-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul class="list-unstyled ">
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Consulenti del lavoro</b>
-                          </li>
-                        </a>
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Avvocati del lavoro</b>
-                          </li>
-                        </a>
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Avvocati</b>
-                          </li>
-                        </a>
-                      </ul>
+                  <div class="card riepilogo my-2">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border profile-img mx-auto" src="assets/team-member-1.png">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <ul class="list-unstyled ">
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Consulenti del lavoro</b>
-                          </li>
-                        </a>
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Avvocati del lavoro</b>
-                          </li>
-                        </a>
-                        <a href="#">
-                          <li class="py-3">
-                            <b>Avvocati</b>
-                          </li>
-                        </a>
-                      </ul>
+                  </div>
+                  <div class="card riepilogo my-2">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-3.png" width="60">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card riepilogo">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-4 p-0">
+                          <img class="img-fluid d-block rounded-circle border d-flex align-self-center mx-auto" src="assets/team-member-1.png" width="60">
+                          <p class="text-center mt-1 mb-0">
+                            <b>Marco Rossi</b>
+                          </p>
+                          <p class="text-center m-0">
+                            <small>BROKER</small>
+                          </p>
+                        </div>
+                        <div class="col-md-8">
+                          <p class="mt-2 mb-0">15/11/2017</p>
+                          <p>Must discuss</p>
+                          <span class="badge mt-1 p-1 badge-notification badge-secondary">RISPONDI</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row border-bottom p-0" data-popover-content="#marine" data-toggle="popover" data-placement="right" data-trigger="hover" data-container="#mar" id="mar">
-            <div class="col-md-12 right-panel">
-              <p class="my-3">
-                <i class="fa d-inline fa-ship fa-lg"></i>
-                <b> MARINE</b>
-                <i class="fa d-inline fa-angle-down px-1 float-right"></i>
-              </p>
-              <div id="marine" class="pl-5 ml-3" style="display:none;">
-                <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <i class="fa d-inline fa-ship text-primary fa-lg"></i>
-                    <b> MARINE</b>
-                  </p>
+          <a data-popover-content="#professioni" data-toggle="popover" data-container="#prof" id="prof" data-placement="right" data-trigger="hover">
+            <div class="row border-bottom p-0">
+              <div class="col-md-12 right-panel">
+                <p class="my-3">
+                  <i class="fa d-inline fa-university fa-lg"></i>
+                  <b> PROFESSIONI LIBERALI</b>
+                  <i class="fa d-inline fa-angle-down px-1 float-right"></i>
+                </p>
+                <div id="professioni" class="pl-5 ml-3" style="display:none;">
+                  <div class="popover-heading">
+                    <p class="text-dark my-2">
+                      <i class="fa d-inline fa-university text-primary fa-lg"></i>
+                      <b> PROFESSIONI LIBERALI</b>
+                    </p>
+                  </div>
+                  <div class="popover-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="list-unstyled ">
+                          <li class="my-3">
+                            <b>Consulenti del lavoro</b>
+                          </li>
+                          <li class="my-3">
+                            <b>Avvocati (Conv. cassa forense)</b>
+                          </li>
+                          <li class="my-3">
+                            <b>Avvocati</b>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list-unstyled ">
+                          <li class="my-3">
+                            <b>Consulenti del lavoro</b>
+                          </li>
+                          <li class="my-3">
+                            <b>Avvocati (Conv. cassa forense)</b>
+                          </li>
+                          <li class="my-3">
+                            <b>Avvocati</b>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="popover-body">
-                  <ul class="list-unstyled">
-                    <a href="#">
-                      <li class="py-3">
-                        <b>Marine</b>
+              </div>
+            </div>
+          </a>
+          <a data-popover-content="#marine" data-toggle="popover" data-placement="right" data-trigger="hover" data-container="#mar" id="mar">
+            <div class="row border-bottom p-0">
+              <div class="col-md-12 right-panel">
+                <p class="my-3">
+                  <i class="fa d-inline fa-ship fa-lg"></i>
+                  <b> MARINE</b>
+                  <i class="fa d-inline fa-angle-down px-1 float-right"></i>
+                </p>
+                <div id="marine" class="pl-5 ml-3" style="display:none;">
+                  <div class="popover-heading">
+                    <p class="text-dark my-2">
+                      <i class="fa d-inline fa-ship text-primary fa-lg"></i>
+                      <b> MARINE</b>
+                    </p>
+                  </div>
+                  <div class="popover-body">
+                    <ul class="list-unstyled">
+                      <li class="my-3">
+                        <b>Yacht</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
+                      <li class="my-3">
                         <b>Barche</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
+                      <li class="my-3">
                         <b>Navi</b>
                       </li>
-                    </a>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row border-bottom p-0" data-popover-content="#casa" data-toggle="popover" data-placement="right" data-trigger="hover" data-container="#cas" id="cas">
-            <div class="col-md-12 right-panel">
-              <p class="my-3">
-                <i class="fa d-inline fa-home fa-lg"></i>
-                <b> CASA E FAMIGLIA</b>
-                <i class="fa d-inline fa-angle-down px-1 float-right"></i>
-              </p>
-              <div id="casa" class="pl-5 ml-3" style="display:none;">
-                <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <i class="fa d-inline fa-home text-primary fa-lg"></i>
-                    <b> CASA E FAMIGLIA</b>
-                  </p>
-                </div>
-                <div class="popover-body">
-                  <ul class="list-unstyled ">
-                    <a href="#">
-                      <li class="py-3">
+          </a>
+          <a data-popover-content="#casa" data-toggle="popover" data-placement="right" data-trigger="hover" data-container="#cas" id="cas">
+            <div class="row border-bottom p-0">
+              <div class="col-md-12 right-panel">
+                <p class="my-3">
+                  <i class="fa d-inline fa-home fa-lg"></i>
+                  <b> CASA E FAMIGLIA</b>
+                  <i class="fa d-inline fa-angle-down px-1 float-right"></i>
+                </p>
+                <div id="casa" class="pl-5 ml-3" style="display:none;">
+                  <div class="popover-heading">
+                    <p class="text-dark my-2">
+                      <i class="fa d-inline fa-home text-primary fa-lg"></i>
+                      <b> CASA E FAMIGLIA</b>
+                    </p>
+                  </div>
+                  <div class="popover-body">
+                    <ul class="list-unstyled ">
+                      <li class="my-3">
                         <b>Incendio</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
+                      <li class="my-3">
                         <b>Furto</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
+                      <li class="my-3">
                         <b>Allagamento</b>
                       </li>
-                    </a>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row border-bottom p-0" data-container="#inf" data-placement="right" data-popover-content="#infortuni" data-toggle="popover" data-trigger="hover" id="inf">
-            <div class="col-md-12 right-panel">
-              <p class="my-3">
-                <i class="fa d-inline fa-heart fa-lg"></i>
-                <b> INFORTUNI E MALATTIA</b>
-                <i class="fa d-inline fa-angle-down px-1 float-right"></i>
-              </p>
-              <div id="infortuni" class="pl-5 ml-3" style="display:none;">
-                <div class="popover-heading">
-                  <p class="text-dark my-2">
-                    <i class="fa d-inline fa-heart text-primary fa-lg"></i>
-                    <b> INFORTUNI E MALATTIA</b>
-                  </p>
-                </div>
-                <div class="popover-body">
-                  <ul class="list-unstyled ">
-                    <a href="#">
-                      <li class="py-3">
+          </a>
+          <a data-popover-content="#infortuni" data-toggle="popover" data-placement="right" data-trigger="hover" data-container="#inf" id="inf">
+            <div class="row border-bottom p-0">
+              <div class="col-md-12 right-panel">
+                <p class="my-3">
+                  <i class="fa d-inline fa-heart fa-lg"></i>
+                  <b> INFORTUNI E MALATTIA</b>
+                  <i class="fa d-inline fa-angle-down px-1 float-right"></i>
+                </p>
+                <div id="infortuni" class="pl-5 ml-3" style="display:none;">
+                  <div class="popover-heading">
+                    <p class="text-dark my-2">
+                      <i class="fa d-inline fa-heart text-primary fa-lg"></i>
+                      <b> INFORTUNI E MALATTIA</b>
+                    </p>
+                  </div>
+                  <div class="popover-body">
+                    <ul class="list-unstyled ">
+                      <li class="my-3">
                         <b>Infortuni</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
-                        <b>Malattina</b>
+                      <li class="my-3">
+                        <b>Infortuni</b>
                       </li>
-                    </a>
-                    <a href="#">
-                      <li class="py-3">
-                        <b>Allagamento</b>
+                      <li class="my-3">
+                        <b>Infortuni</b>
                       </li>
-                    </a>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col">
           <div class="row border-bottom">
@@ -380,7 +490,7 @@
               <hr class="mb-0">
               <div class="row mb-4">
                 <div class="col-md-4 p-3">
-                  <div class="card riepilogo">
+                  <div class="card riepilogo animated animatedFadeInUp fadeInUp">
                     <div class="card-body">
                       <p class="lead m-0">Totale preventivi salvati</p>
                       <div class="row">
@@ -395,7 +505,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 p-3">
-                  <div class="card border riepilogo">
+                  <div class="card border riepilogo animated animatedFadeInUp fadeInUp">
                     <div class="card-body">
                       <p class="lead m-0">Totale certificati emessi</p>
                       <div class="row">
@@ -411,7 +521,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 p-3">
-                  <div class="card riepilogo">
+                  <div class="card riepilogo animated animatedFadeInUp fadeInUp">
                     <div class="card-body">
                       <p class="lead m-0">Totale premi lordi</p>
                       <div class="col-md-12 d-flex align-items-center">
@@ -491,20 +601,20 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 box-border">
                           <ul class="nav nav-tabs">
                             <li class="nav-item">
-                              <a class="active nav-link" href="" data-toggle="tab" data-target="#tabone">Tab 1</a>
+                              <a class="active nav-link" href="" data-target="#tabone" data-toggle="tab">Tab 1</a>
                             </li>
                             <li class="nav-item">
-                              <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Tab 2</a>
+                              <a href="" class="nav-link" data-target="#tabtwo" data-toggle="tab">Tab 2</a>
                             </li>
                             <li class="nav-item">
                               <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree">Tab 3</a>
                             </li>
                           </ul>
                         </div>
-                        <div class="col-md-6 text-center d-flex justify-content-center">
+                        <div class="col-md-6 box-border text-center d-flex justify-content-center">
                           <ul class="nav nav-pills">
                             <li class="nav-item">
                               <a href="#" class="active nav-link" contenteditable="true"> Oggi</a>
@@ -590,12 +700,11 @@
                   <h4>
                     <i class="fa fa-fw fa-link text-primary"></i>&nbsp;Link veloci</h4>
                   <hr>
-                  <a href="#" class="btn text-uppercase btn-block my-2">
-                    <i class="fa fa-fw fa-calculator mx-1"></i>calcola preventivo</a>
-                  <a href="#" class="btn text-uppercase btn-block my-2">
-                    <i class="fa fa-user fa-fw mx-1"></i>nuovo broker</a>
-                  <a href="#" class="btn text-uppercase btn-block my-2">
-                    <i class="fa fa-fw fa-copyright mx-1"></i>gestione whitelabel</a>
+                  
+                  <a href="#" id="calcola-preventivo" class="btn text-uppercase btn-block my-2 twoToneButton"> <i class="fa fa-fw fa-calculator mx-1"></i>calcola preventivo</a>
+                  <a href="#" id="nuovo-broker" class="btn text-uppercase btn-block my-2 twoToneButton"> <i class="fa fa-user fa-fw mx-1"></i>nuovo broker</a>
+                  <a href="#" id="gestione-whitelabel" class="btn text-uppercase btn-block my-2 twoToneButton"> <i class="fa fa-fw fa-copyright mx-1"></i>gestione whitelabel</a>
+                  
                 </div>
               </div>
               <div class="row my-4">
@@ -607,7 +716,7 @@
                     <div class="card-body p-2">
                       <div class="row">
                         <div class="col-md-4 p-0">
-                          <img class="img-fluid d-block border profile-img mx-auto" src="assets/team-member-1.png">
+                          <img class="img-fluid d-block rounded-circle border profile-img mx-auto" src="assets/team-member-1.png">
                           <p class="text-center mt-1 mb-0">
                             <b>Marco Rossi</b>
                           </p>
@@ -737,29 +846,88 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script>
-    $(function() {
-      $("[data-toggle=popover]").popover({
-        html : true,
-        content: function() {
+    $(document).ready(function () {
+      /*setTimeout(function(){
+        $('body').toggleClass('loaded');
+      }, 800);*/
+      setTimeout(function () {
+        $(".to-be-animated").addClass("animated fadeInUp");
+      }, 0);
+
+      $(function () {
+        $("[data-toggle=popover]").popover({
+          html: true,
+          content: function () {
             var content = $(this).attr("data-popover-content");
             return $(content).children(".popover-body").html();
-        },
-        title: function() {
+          },
+          title: function () {
             var title = $(this).attr("data-popover-content");
             return $(title).children(".popover-heading").html();
-        }
-      })
-      
-      window.loadTheme = function(url) {
-        $("head link[rel='stylesheet']").last().attr("href", url)
-      }
+          }
+        })
 
-  	})
+        window.loadTheme = function (url) {
+          $("head link[rel='stylesheet']").last().attr("href", url)
+        }
+
+      });
+
+
+
+
+
+      var twoToneButton = document.querySelector('.twoToneButton');
+      var calcolaPreventivo = document.querySelector('#calcola-preventivo');
+      var nuovoBroker = document.querySelector('#nuovo-broker');
+      var gestioneWhitelabel = document.querySelector('#gestione-whitelabel');
+      calcolaPreventivo.addEventListener("click", function () {
+        calcolaPreventivo.innerHTML = "OPERAZIONE IN CORSO";
+        calcolaPreventivo.classList.add('spinning');
+
+        setTimeout(
+          function () {
+            calcolaPreventivo.classList.remove('spinning');
+            calcolaPreventivo.innerHTML = " CALCOLA PREVENTIVO";
+
+          }, 6000);
+      }, false);
+
+     nuovoBroker.addEventListener("click", function () {
+        nuovoBroker.innerHTML = " OPERAZIONE IN CORSO";
+        nuovoBroker.classList.add('spinning');
+
+        setTimeout(
+          function () {
+            nuovoBroker.classList.remove('spinning');
+            nuovoBroker.innerHTML = " NUOVO BROKER";
+
+          }, 6000);
+      }, false);
+
+     gestioneWhitelabel.addEventListener("click", function () {
+        gestioneWhitelabel.innerHTML = "OPERAZIONE IN CORSO";
+        gestioneWhitelabel.classList.add('spinning');
+
+        setTimeout(
+          function () {
+            gestioneWhitelabel.classList.remove('spinning');
+            gestioneWhitelabel.innerHTML = "GESTIONE WHITELABEL";
+
+          }, 6000);
+      }, false);
+
+    });
+
+
+
   </script>
 </body>
-
 </html>
